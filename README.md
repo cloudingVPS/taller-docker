@@ -13,3 +13,5 @@ git clone https://github.com/cloudingVPS/taller-docker
 mv taller-docker/srv/* /srv/
 /srv/docker/bin/crear-y-levantar-instancias.sh
 ```
+
+**  Tanto el script como las instrucciones del PDF levantan una instancia de MySQL con el password de root "password", se aconseja modificarlo por un password mas seguro **
