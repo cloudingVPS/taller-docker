@@ -1,6 +1,6 @@
 # taller-docker
 
-Este repositorio de git contiene los ficheros para completar el taller del siguitente PDF: http://docker.amarce.me/taller-docker-nginx.pdf
+Este repositorio de git contiene los ficheros para completar el taller del PDF adjunto en este repositorio
 
 El taller se realiza sobre una VM de https://clouding.io de 2 Cores, 2GB de RAM y 25GB de SSD con la imagen de docker.
 
