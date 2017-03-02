@@ -1,0 +1,31 @@
+php-fpm-01:
+  container_name: php-fpm-01
+  build: /srv/docker/etc/php-7.0.16
+  volumes:
+    - /srv/dockerexports/etc/php:/usr/local/etc/php
+    - /srv/dockerexports/var/www:/var/www/html
+  links:
+    - mysql-01
+
+nginx-01:
+  container_name: nginx-01
+  image: nginx:stable
+  ports:
+    - 80:80
+  volumes:
+    - /srv/dockerexports/etc/nginx:/etc/nginx/conf.d
+    - /srv/dockerexports/var/www:/var/www/html
+    - /srv/dockerexports/var/log/nginx:/var/log/nginx
+  links:
+    - php-fpm-01
+
+mysql-01:
+  container_name: mysql-01
+  image: mariadb:10.0
+  ports:
+    - 3306:3306
+  volumes:
+    - /srv/dockerexports/var/lib/mysql:/var/lib/mysql
+  environment:
+    - MYSQL_ROOT_PASSWORD=password
+    - MYSQL_DATABASE=wordpress
