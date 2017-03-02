@@ -10,6 +10,6 @@ Instrucciones para clonar con cliente de git en la VM de clouding.io:
 
 ```
 git clone https://github.com/cloudingVPS/taller-docker
-mv /taller-docker/srv/* /srv/
+mv taller-docker/srv/* /srv/
 /srv/docker/bin/crear-y-levantar-instancias.sh
 ```
