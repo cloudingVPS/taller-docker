@@ -2,7 +2,7 @@
 
 Este repositorio de git contiene los ficheros para completar el taller del PDF adjunto en este repositorio
 
-El taller se realiza sobre una VM de https://clouding.io de 2 Cores, 2GB de RAM y 25GB de SSD con la imagen de docker.
+El taller se realiza sobre una VM de [clouding.io] (https://clouding.io) de 2 Cores, 2GB de RAM y 25GB de SSD con la imagen de docker.
 
 Incluye tambien el script /srv/docker/bin/crear-y-levantar-instancias.sh el cual una vez clonado este repositorio al servidor, o bien copiado todo a mano, se lanza y levanta los tres contenedores; luego ya se puede proceder a instalar wordpress.
 
